@@ -4,21 +4,20 @@
 <dict>
 	<key>Label</key>
 	<string>com.googlecode.munki.managedsoftwareupdate-check</string>
+	<key>RunAtLoad</key>
+		<true/>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/munki/supervisor</string>
 		<string>--delayrandom</string>
-		<string>3600</string>
+		<string>600</string>
 		<string>--timeout</string>
-		<string>43200</string>
+		<string>21600</string>
 		<string>--</string>
 		<string>/usr/local/munki/managedsoftwareupdate</string>
 		<string>--auto</string>
 	</array>
-	<key>StartCalendarInterval</key>
-	<dict>
-		<key>Minute</key>
-		<integer>10</integer>
-	</dict>
+	<key>StartInterval</key>
+        <integer>1800</integer>
 </dict>
 </plist>
