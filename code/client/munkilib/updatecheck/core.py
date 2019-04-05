@@ -67,7 +67,7 @@ def check(client_id='', localmanifestpath=None):
         munkistatus.activate()
 
     munkilog.log('### Beginning managed software check ###')
-    display.display_status_major('Checking for available updates...')
+    display.display_status_major('Checking for available updates...(Press Command + Q to quit)')
     munkistatus.percent('-1')
     munkistatus.detail('')
 
@@ -112,7 +112,7 @@ def check(client_id='', localmanifestpath=None):
             return 0
 
         # reset progress indicator and detail field
-        munkistatus.message('Checking for additional changes...')
+        munkistatus.message('Checking for additional changes...(Press Command + Q to quit')
         munkistatus.percent('-1')
         munkistatus.detail('')
 
