@@ -321,8 +321,6 @@ for TOOL in authrestartd launchapp logouthelper managedsoftwareupdate supervisor
 do
 	cp -X "$MUNKIROOT/code/client/$TOOL" "$COREROOT/usr/local/munki/" 2>&1
 done
-#Install Conditions Folder
-cp -R "$MUNKIROOT/code/client/conditions" "$COREROOT/usr/local/munki/" 2>&1
 # Copy python libraries.
 #cp -X "$MUNKIROOT/code/client/munkilib/"*.py "$COREROOT/usr/local/munki/munkilib/"
 rsync -a --exclude '*.pyc' --exclude '.DS_Store' "$MUNKIROOT/code/client/munkilib/" "$COREROOT/usr/local/munki/munkilib/"
