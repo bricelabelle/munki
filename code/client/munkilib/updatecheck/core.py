@@ -115,7 +115,7 @@ def check(client_id='', localmanifestpath=None):
             return 0
 
         # reset progress indicator and detail field
-        munkistatus.message('Checking for additional changes...(Press Command + Q to quit')
+        munkistatus.message('Checking for additional changes...(Press Command + Q to quit)')
         munkistatus.percent('-1')
         munkistatus.detail('')
 
